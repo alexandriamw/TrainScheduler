@@ -1,34 +1,45 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    background: #DEE8DC;
+}
+
 header {
-    background: gray;
+    background: #0B3954;
     padding: 50px;
     text-align: center;
-    color: white;
+    color: #ffffff;
+    font-size: 40px;
 }
 
 table {
     width: 100%;
     margin-top: 20px;
     padding: 20px;
-    border: 2px solid gray;
 }
 
 th {
-    background: lightblue;
-    border: 1px solid gray;
+    background: #087E8B;
     padding: 5px;
+    color: #ffffff;
 }
 
 td {
     padding: 5px;
-    background: lightgray;
+    background: #D0D8CD;
 }
 
 form {
     padding: 20px;
-    border: 2px solid gray;
     margin-top: 20px;
 }
 
 .form-box {
     width: 100%;
+}
+
+.submit {
+    padding: 10px;
+    border-radius: 5px;
+    background: #087E8B;
+    color: #ffffff;
 }
