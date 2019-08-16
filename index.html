@@ -12,47 +12,52 @@
 
 <body>
     <header>It's Choo Choo Time</header>
+    <h3 class="current">Current Train Schedule</h3>
 
     <table>
-        <h3 class="current">Current Train Schedule</h3>
-        <tr>
-            <th>Train Name</th>
-            <th>Destination</th>
-            <th>Frequency (min)</th>
-            <th>Next Arrival</th>
-            <th>Minutes Away</th>
-        </tr>
-        <tr>
-            <td>example Train</td>
-            <td>Saint Paul</td>
-            <td>30</td>
-            <td>18:00</td>
-            <td>25</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Train Name</th>
+                <th>Destination</th>
+                <th>Frequency (min)</th>
+                <th>Next Arrival</th>
+                <th>Minutes Away</th>
+            </tr>
+        </thead>
+        <tbody id="trainSchedule">
+            <!-- <tr>
+                <td>example Train</td>
+                <td>Saint Paul</td>
+                <td>30</td>
+                <td>18:00</td>
+                <td>25</td>
+            </tr> -->
+        </tbody>
     </table>
 
-    <form>
+    <form id="addTrainForm">
         <h3>Add a Train</h3>
         Train Name:<br>
-        <input class="form-box" type="text" name="" value="">
+        <input id="trainName" class="form-box" type="text" name="trainName">
         <br>
         <br>
         Destination:<br>
-        <input class="form-box" type="text" name="" value="">
+        <input id="destination" class="form-box" type="text" name="destination">
         <br>
         <br>
         First Train Time (HH:mm - military time)<br>
-        <input class="form-box" type="text" name="" value="">
+        <input id="firstTrainTime" class="form-box" type="text" name="firstTrainTime">
         <br>
         <br>
         Frequency (min)<br>
-        <input class="form-box" type="text" name="" value="">
+        <input id="frequency" class="form-box" type="text" name="frequency">
         <br><br>
         <input class="submit" type="submit" value="Submit">
     </form>
 
-    <script src="localforage.js"></script>
+    <script src="localforage.min.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="app.js"></script>
 
 </body>
 
